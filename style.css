@@ -1,0 +1,176 @@
+/*main*/
+@font-face{
+     src: url(C:\Users\why11\Desktop\NotoSansCJKkr-hinted);
+     font-family: NotoSansCJKkr;
+}
+html, body{
+     background-color: #2c3e50;
+     background-size: cover;
+     background-position: center center;
+     animation: fadeIn 1s ease-in-out forwards;
+     overflow: hidden;
+     height: 100%;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+/*main end*/
+
+/*clock*/
+h1 {
+     color : white;
+     font-size: 10em;
+     margin: 0;
+     display: block;
+}
+/*clock end*/
+
+/*center*/
+.center{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+    
+}
+
+.name_input{
+     appearance: none;
+     background: none;
+     border: none;
+     color: white;
+     font-size: 36px;
+     border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+     margin-bottom: 20px;
+}
+
+.name_input::placeholder{
+     color: white;
+     opacity: 1;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+.todo-text{
+     appearance: none;
+     background: none;
+     border: none;
+     color: white;
+     font-size: 26px;
+     border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+     margin-bottom: 20px;
+}
+
+.todo-text::placeholder{
+     color: white;
+     opacity: 0.7;
+}
+/*center end*/
+
+/*to do list*/
+ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     margin-top: 50px;
+}
+.js-toDoList{
+     margin-bottom: 20px;
+}
+
+.toDo{
+     color: white;
+     font-size: 22px;
+}
+
+.list{
+     margin-bottom: 20px;
+}
+
+.todo_btn {
+     cursor: pointer;
+     margin-right: 20px;
+     background-color: transparent !important;
+     background-image: none !important;
+     border-color: transparent;
+     border: none;
+     color: #FFFFFF;
+}
+                                       
+.clicked {
+     color : #7f7f7f;
+}
+
+.form,
+.gretting {
+     display: none;
+}
+
+.showing {
+     display: block;
+     color: white;
+     font-size: 36px;
+     font-family: 'Noto Sans CJK KR Light';
+}
+/*to do list end*/
+
+/*location*/
+.location{
+     opacity: 0.7;
+     color: white;
+     transition: opacity 0.3s ease-in;
+     font-style: italic;
+     font-size: 12px;
+     position: relative;
+     right: 500px;
+     top: 170px;
+}
+
+.location:hover{
+     opacity: 1;
+}
+/*location end*/
+
+/*weather*/
+.weather{
+     color: white;
+     position: absolute;
+     font-style: italic;
+     font-size: 12px;
+     position: absolute;
+     top: 25px;
+     right: 25px;
+}
+/*weather end*/
+
+/*background*/
+@keyframes fadeIn{
+     from{
+          opacity: 0;
+     }
+     to {
+          opacity: 1;
+     }
+}
+
+.bgImage{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     animation: fadeIn 1s linear;
+}
+
+/*background end*/
+
+input [type="text" i] {
+     border: 1px 2px;
+     background-color: none;
+}
